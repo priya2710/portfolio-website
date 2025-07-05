@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import config from "../config";
+import { FaMobile } from "react-icons/fa6";
 
 export default function Sidebar() {
   const { github, linkedin, email } = config.contact;
@@ -8,6 +9,7 @@ export default function Sidebar() {
     { icon: <FaLinkedin />, link: linkedin },
     { icon: <FaGithub />, link: github },
     { icon: <FaEnvelope />, link: `mailto:${email}` },
+    { icon: <FaMobile />, link: `tel:${config.contact.phone}` },
   ];
 
   return (
@@ -18,7 +20,7 @@ export default function Sidebar() {
           href={item.link}
           target="_blank"
           rel="noreferrer"
-          className="text-gray-500 hover:text-purple-600 text-xl transition"
+          className="text-gray-500 hover:text-purple-600 text-3xl transition"
         >
           {item.icon}
         </a>
