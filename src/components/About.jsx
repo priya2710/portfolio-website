@@ -19,7 +19,7 @@ export default function About() {
           {/* Right Image Block */}
           <div className="w-48 h-48 md:w-64 md:h-64 overflow-hidden border-4 border-purple-600 shadow-lg clip-blob">
             <img
-              src="/profile.jpg"
+              src={`${process.env.PUBLIC_URL}/profile.jpg`}
               alt="Supriya Profile"
               className="w-full h-full object-cover"
             />
