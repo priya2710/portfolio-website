@@ -1,7 +1,7 @@
 // src/config.js
 
 const config = {
-  navLinks: ["About", "Experience", "Education"],
+  navLinks: ["About", "Skills", "Experience", "Education"],
 
   about: {
     name: "Supriya Rani",
